@@ -1,0 +1,163 @@
+bill_type_code, name, payment_type, service_type, service_name, bill_type_account_label, bill_reference_type, bill_type_status, bill_type_description, allow_rct_reprint, otp_enabled, validation_enabled
+122, Orange Pre-Paid, PREP, PHN, Telecom and Internet, Orange Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5.5,11,16.5,22,27.5,44,55,110,220, true, false, false
+112, Orange Post-Paid, POST, PHN, Telecom and Internet, Orange Mobile Number, false, Available, true, false, false
+121, Vodafone Pre-Paid, PREP, PHN, Telecom and Internet, Vodafone Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5.5,11,16.5,22,27.5,44,55,110,220, true, false, false
+123, Etisalat Pre-Paid, PREP, PHN, Telecom and Internet, Etisalat Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5.5,11,16.5,22,27.5,44,55,110,220, true, false, false
+113, Etisalat Post-Paid, POST, PHN, Telecom and Internet, Etisalat Mobile Number, false, Available, Allowed Amounts Are 30-10000, true, false, false
+124, Telecom Egypt Monthly Bill Payment, POST, PHN, Telecom and Internet, Phone Number, false, Available,    , true, false, false
+114, Telecom Egypt Quarterly Bill Payment, POST, PHN, Telecom and Internet, Phone Number, false, Available,    , true, false, false
+117, TEData Bill Payment, POST, PHN, Telecom and Internet, Phone Number, false, Available,    , true, false, false
+127, Tal2a Recharge, PREP, PHN, Telecom and Internet, Phone Number, false, Available, ALLOWED AMOUNTS ARE 25,60,75, true, false, false
+115, LINKDSL Bill Payment, POST, PHN, Telecom and Internet, Phone Number, false, Available,    , true, false, false
+923, Saq Mwahed, PREP, CHR, Donations, Mobile No., false, Available, 700,1200, true, false
+922, Food Bank - Money Zakat, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5-10000, true, false, false
+925, Food Bank - Iftar Al Saem, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 85,170,255, true, false, false
+926, Food Bank - Ahed el Kheir, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 85,175,300, true, false, false
+927, Food Bank - Al Fetr, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 8,16,24,32,40,48, true, false, false
+966, Lohoom Sadakat, PREP, CHR, Donations, Mobile Number, true, false, Available, BILLPMT, 70-140-210-280, true, false, false
+930, Food Bank - Development, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5-300, true, false, false
+940, School Feeding Program, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 75,150,300,450,600, true, false, false
+920, Food Bank - Hayah Karima, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-300, true, false, false
+994, Barnameg Al Egatha, PREP, CHR, Donations, Mobile No., false, Available, 5-250, true, false
+928, 57357 Hosp. Donations, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+936, 57357-Monthly Donate, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-250, true, false, false
+937, 57357-Naming Opportunity(Sadaka), PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-250, true, false, false
+938, 57357-Sponser a Sick\xa0Child(Kafala), PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-250, true, false, false
+939, 57357-Money Zakat, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-250, true, false, false
+929, We Owe it to Egypt Foundation, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5-250, true, false, false
+944, \xa0Resala - Sponsor an Orphan, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+945, Resala-Zakat mall (alms), PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+946, Resala - Bahia hospital, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+947, \xa0Resala - Naming Opportunity(Sadaka), PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+948, \xa0Resala - Iftar Al Saem, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+956, Resala Critical cases and operations, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5-250, true, false, false
+951, Cure Bank-General Donation, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+952, Cure Bank-Naming Opportunity(Sadaka), PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+953, Cure Bank-Zakaht, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+954, Cure Bank-Medical Equipment, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+955, Cure Bank-Hayah Karima, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+941, Misr Elkheir-Zakaht, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5-250, true, false, false
+942, Misr Elkheir-Sadaka, PREP, CHR, Donations, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 5-250, true, false, false
+980, Eftar Saaem, PREP, CHR, Donations, Mobile number , false, Available, 10-10000, true, false
+9410, Zakat Fetr, PREP, CHR, Donations, Mobile No., false, Available, 12-250, true, false
+975, Saq El-odehya, PREP, CHR, Donations, Mobile No., false, Available, 2195,4390, true, false
+511, Canal Electricity, POST, UTL, Utilities, User ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+512, Middle Egypt Electricity, POST, UTL, Utilities, User ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+513, North Delta Electricity, POST, UTL, Utilities, User ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+191, Allianz, POST, TRF, Car Licensing, National ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+192, AMIG, POST, TRF, Car Licensing, National ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+157, Royal, POST, TRF, Car Licensing, National ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+218, Egyptian Saudi Insurance House, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+223, Royal Other Governorates, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+222, AMIG-Other Governorates, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+221, Alianz Other Governorates, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+219, Egy Saudi Ins House - Other Govs, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+421, GIG Road Side Assistance, PREP, INS, Insurance, Mobile Number, false, Available, ALLOWED AMOUNTS ARE 100, true, false, false
+231, Egypt Air, POST, TRV, Tickets and Tourism, Booking Reference, false, Available, ALLOWED AMOUNTS ARE 10-100000, true, false, false
+236, Air Arabia, POST, TRV, Tickets and Tourism, Booking reference, false, Available,    , true, false, false
+193, Traffic Fines, POST, TRF, Car Licensing, National ID, false, Available, ALLOWED AMOUNTS ARE 10-50000, true, false, false
+224, Traffic Fines Other Govs, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+510, South Cairo Electricity Bill, POST, UTL, Utilities, Subscriber Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+517, Upper Egypt Electricity, POST, UTL, Utilities, Subscriber Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+519, South Delta Electricity Bill, POST, UTL, Utilities, Subscriber Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+516, North Cairo Electricity Bill, POST, UTL, Utilities, Subscriber Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+530, El Beheira Electricity, POST, UTL, Utilities, Subscriber Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+524, Alexandria Electricity Bill, POST, UTL, Utilities, Subscriber Number, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+190, Traffic Taxes, POST, TRF, Car Licensing, National ID, false, Available, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+220, Traffic Taxes 1 Other Govs, POST, TRF, Car Licensing, National ID, false, Available, 1-10000, true, false
+195, License Home Delivery, POST, TRF, Car Licensing, National ID, false, Available, ALLOWED AMOUNTS ARE 1-100, true, false, false
+225, License Home Delivery Other Gov, POST, TRF, Car Licensing, National ID, false, Available, 1-100, true, false
+228, Pay&Receive@Home, POST, TRF, Car Licensing, National ID, false, Available, 1-1000, true, false
+470, HDB Wallet Cash In, PREP, BKS, Financial and Banks, Mobile number, false, false, Available, OTPGEN, allowed amounts, true, true, false
+471, HDB Wallet Cash Out, PREP, BKS, Financial and Banks, Mobile number, false, false, Available, CASHOUT, HDB Wallet Cash Out, true, false, false
+473, HDB Wallet SendMoney, PREP, BKS, Financial and Banks, Mobile number, false, false, Available, P2P, HDB Wallet SendMoney, true, false, false
+474, HDB Wallet Account Load, PREP, BKS, Financial and Banks, Mobile number, false, false, Available, AcVL, HDB Wallet Account Load, true, false, false
+551, HDB Wallet SendMoney offus, PREP, BKS, Financial and Banks, Wallet Number, false, false, Available, P2P, ALLOWED AMOUNTS ARE 1-3000, true, false, false
+4360, CASH OUT otp, PREP, INS, Insurance, Mobile Number, false, false, Available, OTPAMTGEN, CASH OUT otp, true, true, false
+210, Nesma Airlines, POST, TRV, Tickets and Tourism, Booking Refrence, false, Available, 1-54000, true, false
+613, undergraduate, POST, EXM, Education, Student ID/National ID, false, Available, 1-25000, true, false
+614, postgraduate, POST, EXM, Education, Student ID/National ID, false, Available, 1-20000, true, false
+618, Students’ Hostel, POST, EXM, Education, Student ID, false, Available, 1-165, true, false
+612, Cairo University tuitions, POST, EXM, Education, Student Number, false, false, Available, BILLPMT, 100-10000, true, false, false
+615, Ainshm-Faculty of engineering, POST, EXM, Education, Student Number, false, Available, 1-10000, true, false
+176, Faculty of Engineering-credit system, POST, EXM, Education, Student Number, false, false, Available, BILLPMT, 10-20000, true, false, false
+933, Ayady almostakbal, PREP, CHR, Donations, Mobile number , false, Available, 10-250, true, false
+969, Instruments, PREP, CHR, Donations, Mobile number , false, Available, 10-250, true, false
+974, Lo7om sadkat, PREP, CHR, Donations, Mobile number , false, Available, 5-2000, true, false
+990, Dar Al Orman charity, PREP, CHR, Donations, Mobile No, false, Available, 10-5000, true, false
+9201, Dar Al Orman charity, PREP, CHR, Donations, Mobile No, false, Available, 10-250, true, false
+973, Sak lo7om balady 3ogol k, PREP, CHR, Donations, Mobile No, false, Available, 1990,3980, true, false
+972, Sak lo7om balady 3ogol s, PREP, CHR, Donations, Mobile No, false, Available, 1690,3380, true, false
+971, Sak Lo7om mostawrda, PREP, CHR, Donations, Mobile No, false, Available, 1490,2980, true, false
+991, Liver Instituts, PREP, CHR, Donations, Mobile Number, false, Available, 10-800, true, false
+995, Zakat, PREP, CHR, Donations, Mobile Number, false, Available, 10-250, true, false
+9200, Mersal Foundation, PREP, CHR, Donations, Mobile Number, false, Available, 10-800, true, false
+9995, donation to bahia foundation, PREP, CHR, Donations, Mobile Number, false, Available, 5-800, true, false
+119, Noor Quota, POST, PHN, Telecom and Internet, Fawry ID, false, Available, 5-10000, true, false
+772, Careem Customer Cash IN, PREP, EBS, Online Payments, Mobile No., false, Available, 10-10000, true, false
+763, Careem Captains Cash In, PREP, EBS, Online Payments, Mobile No., false, Available, 10-10000, true, false
+531, Dental syndicate  Conference, PREP, ADV, Subscriptions and Ads, Membership No , false, Available, 150-350, true, false
+536, Notify Payment, POST, UTL, Utilities, Account Number, false, Available, 1-10000, true, false
+535, Average, POST, UTL, Utilities, Account Number, false, false, Available, BILLPMT, Allowed Amounts are 10-10000, true, false, false
+537, Installment Payment, POST, UTL, Utilities, Account Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 10-10000, true, false, false
+719, Vezeeta, POST, EBS, Online Payments, Refrence No., false, Available, 1-10000, true, false
+720, Vezeeta Doctors, POST, EBS, Online Payments, Mobile Number, false, Available, 1-10000, true, false
+7701, syndicate subscription, POST, ADV, Subscriptions and Ads, Subscription Number, false, Available, 1-10000, true, false
+796, Culture Wheel, POST, EBS, Online Payments, Refrence Number, false, Available, 1-10000, true, false
+244, FLY Egypt, POST, TRV, Tickets and Tourism, Refrence Number, false, Available, 100-10000, true, false
+325, Waffarha.com - Charging Credit, PREP, EBS, Online Payments, Waffarha ID No., false, Available, 1-10000, true, false
+333, Waffarha.com - Bill Payment, POST, EBS, Online Payments, Purchase transaction no. , false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+334, Ekhtarna Lk, POST, ADV, Subscriptions and Ads, Order Number, false, Available, 5-10000, true, false
+310, Ekhtarna Lk Ads, PREP, ADV, Subscriptions and Ads, National ID, false, false, Available, REG, Allowed amounts are 1-10000, true, false, false
+771, Electronic Substitution, PREP, ADV, Subscriptions and Ads, Membership Number, false, Available, 10-100, true, false
+801, Katamia home delivery, POST, ADV, Subscriptions and Ads, Member ID, false, Available, 1-25, true, false
+700, Advisory Renewal, POST, ADV, Subscriptions and Ads, Subscription Number, false, Available, 1-10000, true, false
+703, Home Delivery engineer renewal, POST, ADV, Subscriptions and Ads, Member ID, false, Available, 1-20, true, false
+702, Home Delivery Medical care, POST, ADV, Subscriptions and Ads, Member ID, false, Available, 1-20, true, false
+704, Home Delivery advisory renewal, POST, ADV, Subscriptions and Ads, Member ID, false, Available, 1-20, true, false
+758, Medicals Syndicate, POST, ADV, Subscriptions and Ads, Registration Number, false, false, Available, BILLPMT, 5-10000, true, false, false
+759, Pharmacists Syndicate, POST, ADV, Subscriptions and Ads, Registration Number, false, false, Available, BILLPMT, 5-10000, true, false, false
+760, Veterinarians Syndicate, POST, ADV, Subscriptions and Ads, Registration Number, false, false, Available, BILLPMT, 5-10000, true, false, false
+761, Dentists Syndicate, POST, ADV, Subscriptions and Ads, Registration Number, false, false, Available, BILLPMT, 5-10000, true, false, false
+762, Employees, POST, ADV, Subscriptions and Ads, Registration Number, false, false, Available, BILLPMT, 5-10000, true, false, false
+9993, Social solidarity sadka, PREP, CHR, Donations, Mobile Number, false, Available, 5-800, true, false
+9992, Social solidarity zakah, PREP, CHR, Donations, Mobile Number, false, Available, 5-800, true, false
+9990, Iftar Saem, PREP, CHR, Donations, Mobile Number, false, Available, 5-800, true, false
+766, Pharmacists syndicate subscription, POST, ADV, Subscriptions and Ads, Subscription number, false, Available, 1-10000, true, false
+773, OLX, PREP, EBS, Online Payments, Customer ID, false, Available, 10-10000, true, false
+776, Alex Scientists Synd Home Deli, POST, ADV, Subscriptions and Ads, Member ID, false, Available, 1-20, true, false
+987, AlBoraq Charity, PREP, CHR, Donations, Mobile No, false, Available, 10-1000, true, false
+989, Ain Shams hospital, PREP, CHR, Donations, Mobile No., false, Available, 10-1000, true, false
+774, Uber Partners Cash In, PREP, EBS, Online Payments, Mobile No., false, Available, 1-10000, true, false
+326, 57357/AFNCI, PREP, CHR, Donations, Mobile Number, false, en-gb, false, Available, BILLPMT, Allowed amounts are 5-250, true, false, false
+814, elCinema.com, POST, TRV, Tickets and Tourism, Booking Reference, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 1-800, true, false, false
+712, Edfa3ly, POST, EBS, Online Payments, Fawry Number, false, false, Available, BILLPMT, Allowed amounts are 1-10000, true, false, false
+233, Go Bus, POST, TRV, Tickets and Tourism, Fawry ID, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 5-10000, true, false, false
+815, E7gezly, POST, TRV, Tickets and Tourism, Fawry ID, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 5-10000, true, false, false
+515, AlexWater, POST, UTL, Utilities, Subscription Number, false, false, Available, BILLPMT, 1-10000, true, false, false
+528, Matrouh Water, POST, UTL, Utilities, Subscription Number, false, false, Available, BILLPMT, 1-10000, true, false, false
+935, Cancer Inst 300300, PREP, CHR, Donations, Mobile Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 5-250, true, false, false
+414, Allianz Life Insurance, POST, INS, Insurance, Policy Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 10-10000, true, false, false
+518, Red Sea Water, POST, UTL, Utilities, Subscription Number, false, false, Available, BILLPMT, Allowed amount are 1-10000, true, false, false
+957, M Yacoub Donations, PREP, CHR, Donations, Mobile Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 5-250, true, false, false
+959, Sadaka Garia\xa0M Yacoub, PREP, CHR, Donations, Mobile number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 5-250, true, false, false
+960, Zakat Mal M Yacoub, PREP, CHR, Donations, Mobile number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 5-250, true, false, false
+520, Beni Suef Water Company, POST, UTL, Utilities, Subscription Number, false, false, Available, BILLPMT, Allowed amounts are 1-10000, true, false, false
+410, Ace Life Insurance, POST, INS, Insurance, Policy Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+610, Masrofaty, POST, EXM, Education, Student Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+418, Misr Life Insurance, POST, INS, Insurance, Fawry Number, false, false, ar-eg, *تاريخ الفاتورة* هو تاريخ استحقاق القسط, Available, BILLPMT, ALLOWED AMOUNTS ARE 1-10000, true, false, false
+239, Karnak, POST, TRV, Tickets and Tourism, Reference number, false, false, Available, BILLPMT, 10-100000, true, false, false
+9899, Ahl-Masr For burns, PREP, CHR, Donations, Mobile No., false, false, Available, BILLPMT, slabs, true, false, false
+965, cancer institute 500500, PREP, CHR, Donations, Mobile Number, false, false, Available, BILLPMT, slabs, true, false, false
+967, Abu Rish Japanese Hospital, PREP, CHR, Donations, Mobile No., false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 10-250, true, false, false
+932, Tahya Misr, PREP, CHR, Donations, Mobile Number, false, false, Available, BILLPMT, ALLOWED AMOUNTS ARE 10-500, true, false, false
+788, @Fawry, POST, @FWY, @Fawry, Reference Number, false, false, Available, BILLPMT, @Fawry, true, false, false
+606, beIN, POST, ADV, Subscriptions and Ads, Subscriber Card Number, false, false, Available, allowed amounts are:50-5000, true, false, false
+605, ART, POST, ADV, Subscriptions and Ads, Subscriber Card Number, false, false, Available, allowed amounts are:50-5000, true, false, false
+607, Reference number, POST, ADV, Subscriptions and Ads, Subscriber Card Number, false, Available, allowed amounts are:50-5000, true, false
+768, BILL PAYMENT, POST, EBS, Online Payments, order number, false, false, Available, allowed amounts are:5-20000, true, false, false
+769, BILLS PAYMENT, POST, EBS, Online Payments, order number, false, false, Available, allowed amounts are:5-20000, true, false, false
+394, Installments of House&Development Bank, POST, HDB, Housing&development Bank, Fawry Number, false, false, Available, ALLOWED AMOUNTS ARE : 20-2000, true, false, false
+468, Social Housing, POST, HDB, Housing&development Bank, Fawry Number, false, false, Available, allowed amounts are :20-2000, true, false, false
+
+Process finished with exit code 0
