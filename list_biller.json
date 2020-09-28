@@ -1,0 +1,328 @@
+{
+    "customer_offical_ids": [
+        {
+            "number": "",
+            "type": "",
+            "issue_date": "2019-01-01",
+            "expiry_date": "2022-01-01",
+            "address": "",
+            "title": "",
+            "image_face": "",
+            "image_back": ""
+        }
+    ],
+    "record_control": {
+        "matched_records_number": 0,
+        "sent_records_number": 0,
+        "cursor": 0
+    },
+    "payment_type": "",
+    "service_type": "",
+    "delivery_method": "",
+    "biller_records": [
+        {
+            "id": "",
+            "name": "",
+            "name_language": "",
+            "biller_information": [
+                {
+                    "bill_type_code": 0,
+                    "name": "",
+                    "payment_type": "",
+                    "service_type": "",
+                    "service_name": "",
+                    "bill_type_account_label": "",
+                    "account_input_method": "",
+                    "hidden": false,
+                    "name_language": "",
+                    "bill_type_extra_reference_keys": [
+                        {
+                            "key": "",
+                            "label": "",
+                            "required": false,
+                            "confirmation_required": false,
+                            "print_key_part": false,
+                            "ba_key_part": false,
+                            "encryption_required": false,
+                            "encryption_key_profile": "",
+                            "input_method": "",
+                            "input_masked": false,
+                            "description": ""
+                        }
+                    ],
+                    "bill_reference_type": false,
+                    "receipt_header_language": "",
+                    "receipt_header": "",
+                    "receipt_footer_language": "",
+                    "receipt_footer": "",
+                    "payment_rules": {
+                        "inquiry_required": false,
+                        "mobile_notification": false,
+                        "fraction_accepted": false,
+                        "partial_accepted": false,
+                        "over_accepted": false,
+                        "advance_accepted": false,
+                        "accept_card_payment": false
+                    },
+                    "fees": [
+                        {
+                            "tiers": [
+                                {
+                                    "lower_amount": 0,
+                                    "upper_amount": 0,
+                                    "fixed_amount": {
+                                        "amount": 0,
+                                        "currency_code": ""
+                                    },
+                                    "percent": {
+                                        "value": 0,
+                                        "min_amount": 0,
+                                        "max_amtount": 0
+                                    },
+                                    "start_date": "2017-01-01",
+                                    "expiry_date": "2017-01-01"
+                                }
+                            ],
+                            "embedded_fees": false,
+                            "account_type": ""
+                        }
+                    ],
+                    "bill_type_status": "",
+                    "tax": 0,
+                    "start_date": "2017-01-01",
+                    "expiry_date": "2017-01-01",
+                    "type": "",
+                    "bill_type_logo": "",
+                    "extra_information": "",
+                    "kyc_required": false,
+                    "accept_zero_payment": false,
+                    "service_type_logo": "",
+                    "related_products": [
+                        {
+                            "code": "",
+                            "name": "",
+                            "description": "",
+                            "type": "",
+                            "cost": 0,
+                            "product_tax": 0,
+                            "quantity": 0,
+                            "ax_id": "",
+                            "ax_integrated": false
+                        }
+                    ],
+                    "sub_bills": [
+                        {
+                            "bill_type_code": 0,
+                            "name": "",
+                            "payment_type": "",
+                            "service_type": "",
+                            "service_name": "",
+                            "bill_type_account_label": "",
+                            "account_input_method": "",
+                            "hidden": false,
+                            "name_language": "",
+                            "bill_type_extra_reference_keys": [
+                                {
+                                    "key": "",
+                                    "label": "",
+                                    "required": false,
+                                    "confirmation_required": false,
+                                    "print_key_part": false,
+                                    "ba_key_part": false,
+                                    "encryption_required": false,
+                                    "encryption_key_profile": "",
+                                    "input_method": "",
+                                    "input_masked": false,
+                                    "description": ""
+                                }
+                            ],
+                            "bill_reference_type": false,
+                            "receipt_header_language": "",
+                            "receipt_header": "",
+                            "receipt_footer_language": "",
+                            "receipt_footer": "",
+                            "payment_rules": {
+                                "inquiry_required": false,
+                                "mobile_notification": false,
+                                "fraction_accepted": false,
+                                "partial_accepted": false,
+                                "over_accepted": false,
+                                "advance_accepted": false,
+                                "accept_card_payment": false
+                            },
+                            "fees": [
+                                {
+                                    "tiers": [
+                                        {
+                                            "lower_amount": 0,
+                                            "upper_amount": 0,
+                                            "fixed_amount": {
+                                                "amount": 0,
+                                                "currency_code": ""
+                                            },
+                                            "percent": {
+                                                "value": 0,
+                                                "min_amount": 0,
+                                                "max_amtount": 0
+                                            },
+                                            "start_date": "2017-01-01",
+                                            "expiry_date": "2017-01-01"
+                                        }
+                                    ],
+                                    "embedded_fees": false,
+                                    "account_type": ""
+                                }
+                            ],
+                            "bill_type_status": "",
+                            "tax": 0,
+                            "start_date": "2017-01-01",
+                            "expiry_date": "2017-01-01",
+                            "type": "",
+                            "bill_type_logo": "",
+                            "extra_information": "",
+                            "kyc_required": false,
+                            "accept_zero_payment": false,
+                            "service_type_logo": "",
+                            "related_products": [
+                                {
+                                    "code": "",
+                                    "name": "",
+                                    "description": "",
+                                    "type": "",
+                                    "cost": 0,
+                                    "product_tax": 0,
+                                    "quantity": 0,
+                                    "ax_id": "",
+                                    "ax_integrated": false
+                                }
+                            ],
+                            "profile_codes": [
+                                ""
+                            ],
+                            "payment_ranges": [
+                                {
+                                    "lower_amount": 0,
+                                    "lower_amount_currency": "",
+                                    "upper_amount": 0,
+                                    "upper_amount_currency": ""
+                                }
+                            ],
+                            "bill_type_nature": "",
+                            "corr_bill_type_code": 0,
+                            "billing_frequancy": {
+                                "value": 0,
+                                "unit": ""
+                            },
+                            "billing_cycles": [
+                                {
+                                    "cycle": 0,
+                                    "unit": "",
+                                    "code": "",
+                                    "name_prime_language": "",
+                                    "name_secondary_language": "",
+                                    "description_prime_language": "",
+                                    "description_secondary_language": "",
+                                    "default_value": false,
+                                    "status": "",
+                                    "offset": 0
+                                }
+                            ],
+                            "account_type_profile_codes": [
+                                ""
+                            ],
+                            "external_url": "",
+                            "external_url_label": "",
+                            "bill_type_description": "",
+                            "allow_rct_reprint": false,
+                            "otp_enabled": false,
+                            "csp_code": "",
+                            "validation_enabled": false,
+                            "timeout": "",
+                            "otp_required": false,
+                            "taxes": {
+                                "label": "",
+                                "fixed_amount": {
+                                    "amount": 0,
+                                    "currency_code": ""
+                                },
+                                "percent": {
+                                    "value": 0,
+                                    "min_amount": 0,
+                                    "max_amtount": 0
+                                }
+                            },
+                            "ba_configuration_required": false,
+                            "terms_condition_required": false,
+                            "terms_condition_url": "",
+                            "terms_condition": "",
+                            "support_payment_reverse": false
+                        }
+                    ],
+                    "profile_codes": [
+                        ""
+                    ],
+                    "payment_ranges": [
+                        {
+                            "lower_amount": 0,
+                            "lower_amount_currency": "",
+                            "upper_amount": 0,
+                            "upper_amount_currency": ""
+                        }
+                    ],
+                    "bill_type_nature": "",
+                    "corr_bill_type_code": 0,
+                    "billing_frequancy": {
+                        "value": 0,
+                        "unit": ""
+                    },
+                    "billing_cycles": [
+                        {
+                            "cycle": 0,
+                            "unit": "",
+                            "code": "",
+                            "name_prime_language": "",
+                            "name_secondary_language": "",
+                            "description_prime_language": "",
+                            "description_secondary_language": "",
+                            "default_value": false,
+                            "status": "",
+                            "offset": 0
+                        }
+                    ],
+                    "account_type_profile_codes": [
+                        ""
+                    ],
+                    "external_url": "",
+                    "external_url_label": "",
+                    "bill_type_description": "",
+                    "allow_rct_reprint": false,
+                    "otp_enabled": false,
+                    "csp_code": "",
+                    "validation_enabled": false,
+                    "timeout": "",
+                    "otp_required": false,
+                    "taxes": {
+                        "label": "",
+                        "fixed_amount": {
+                            "amount": 0,
+                            "currency_code": ""
+                        },
+                        "percent": {
+                            "value": 0,
+                            "min_amount": 0,
+                            "max_amtount": 0
+                        }
+                    },
+                    "ba_configuration_required": false,
+                    "terms_condition_required": false,
+                    "terms_condition_url": "",
+                    "terms_condition": "",
+                    "support_payment_reverse": false
+                }
+            ],
+            "status": "",
+            "logo": ""
+        }
+    ],
+    "profile_code": ""
+}
