@@ -1,8 +1,5 @@
 import json
-import openpyxl
-
-file_name = "response.json"
-
+from openpyxl import Workbook
 
 def print_keys(prefix_id, parent_dict_key, dictx):
 
@@ -34,6 +31,8 @@ def print_values(prefix, dictx):
         else:
             print(prefix, p_id, p_info)
 
+
+
 def list_billers (dicx):
 
     headers = dicx[0]
@@ -49,6 +48,7 @@ def list_billers (dicx):
             if type(v) not in (dict, list) :
                 arr.append(v)
         print (arr)
+
 
 def list_biller_info (dicx, key):
 
@@ -69,23 +69,69 @@ def list_biller_info (dicx, key):
                         arr.append(v)
                 print(arr)
 
-with open(file_name, 'r', encoding ='UTF-8') as myfile:
-    data=myfile.read()
-myfile.close
-# parse file
-billers = json.loads(data)
 
-fp = open('biller.json', 'wt')
-json.dump(billers, fp, indent=4)
+def load_json_file(file_name):
+    with open(file_name, 'r', encoding ='UTF-8') as myfile:
+        data=myfile.read()
+    myfile.close
+    # parse file
+    billers = json.loads(data)
+
+    return billers
 
 
-print_keys(0, "billers", billers)
+def format_dict_file(dictx):
+    fp = open('biller.json', 'wt')
+    json.dump(dictx, fp, indent=4)
+
+
+def print_fawry_billers():
+    billers = load_json_file(file_name = "response.json")
+    print_keys(0, "billers", billers)
+
+
+def fawry_billers_excel(file_name):
+    billers = load_json_file(file_name)
+    wb = Workbook()
+    ws = wb.active
+    row, header = dict_to_row(billers['biller_records'][0])
+    ws.append(header)
+    ws.append(row)
+    for b_rec in billers['biller_records']:
+        row,header = dict_to_row(b_rec)
+        ws.append(header)
+        ws.append(row)
+
+    sheet1 = wb.create_sheet()
+    row, header = dict_to_row(billers['biller_records'][0]['biller_information'][0])
+    sheet1.append(header)
+    sheet1.append(row)
+    for b_rec in billers['biller_records']:
+        for b in b_rec['biller_information']:
+            row, header = dict_to_row(b)
+            sheet1.append(header)
+            sheet1.append(row)
+
+    wb.save("fawry_billers.xlsx")
+
+
+def dict_to_row(dictx):
+    if type(dictx) != dict:
+        return None
+    row = []
+    header = []
+    for p_id, p_info in dictx.items():
+        if type(p_info) == str:
+            header.append(p_id)
+            row.append(p_info)
+
+    return row, header
 #print_values("", billers)
 #list_billers(billers['biller_records'])
 #print (billers['biller_records'])
 #list_billers(billers['biller_records'])
-# list_biller_info(billers['biller_records'], 'biller_information')
-
+#list_biller_info(billers['biller_records'], 'biller_information')
+fawry_billers_excel('response.json')
 
 
 
