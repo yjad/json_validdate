@@ -94,6 +94,26 @@ def fawry_billers_excel(file_name):
     billers = load_json_file(file_name)
     wb = Workbook()
     ws = wb.active
+    
+    
+    
+    for biller_rec in billers['biller_records']:
+        for biller_info in biller_rec['biller_information']:
+            row = []
+            header = []
+            row.append(biller_rec['id'])
+            row.append(biller_rec['name'])
+            header.append('id')
+            header.append('name')     
+            dict_to_row(biller_info, row, header) 
+            #print (type(header), biller_rec['id'])
+            if header:
+                ws.append(header)
+                ws.append(row)
+    wb.save(file_name +".xlsx")
+        
+    return
+    
     row, header = dict_to_row(billers['biller_records'][0])
     ws.append(header)
     ws.append(row)
@@ -112,26 +132,74 @@ def fawry_billers_excel(file_name):
             sheet1.append(header)
             sheet1.append(row)
 
-    wb.save("fawry_billers.xlsx")
+    sheet2 = wb.create_sheet()
+    sheet2 = sheet2.active
+    #for b_rec in billers['biller_records']:
+    #    row, header = dict_to_row(b_rec)
+    #    sheet2.append(header)
+    #    sheet2.append(row)
 
+    
+    wb.save(file_name +".xlsx")
 
-def dict_to_row(dictx):
-    if type(dictx) != dict:
-        return None
+    
+def list_biller_records(biller_records):
+
     row = []
     header = []
-    for p_id, p_info in dictx.items():
-        if type(p_info) == str:
-            header.append(p_id)
-            row.append(p_info)
+    for brec in biller_records:   # list
+        for brec_id, brec_value in b_rec.items():
+            if type(brec_value) == str:
+                header.append(brec_id)
+                row.append(brec_value)
+                continue
+            for binfo in brec_value.get('biller_information'): # list of biller information
+                for binfo_id, binfo_value in binfo.items():   # dict items
+                    if type(binfo_value) == str:
+                        header.append("biller_information: " + binfo_value)
+                        row.append(binfo_id)
+                    elif binfo_id == 'payment_rules': #dict
+                        for prule_id, prule_value in binfo_value:
+                            header.append("biller_information: payment_rules: " + prule_info)
+                            row.append(prule_id)
+                    elif binfo_id == 'fees': #dict
+                        for fee in binfo_value:# list
+                            for fee_id, fee_value in fee:
+                                if fee_id == 'tiers': # list
+                                    for tier in fee_value:
+                                        for tier_id, tier_value in tier.items():
+                                            header.append("tiers: " + tier_id)
+                                            row.append(tier_value)
+                                else:
+                                    header.append("fees: " + fee_id_id)
+                                    row.append(fee_value)
+                        
+                row, header = dict_to_row(b)
+                sheet1.append(header)
+                sheet1.append(row)
 
-    return row, header
-#print_values("", billers)
-#list_billers(billers['biller_records'])
-#print (billers['biller_records'])
-#list_billers(billers['biller_records'])
-#list_biller_info(billers['biller_records'], 'biller_information')
-fawry_billers_excel('response.json')
-
-
-
+    
+    
+def dict_to_row(dictx, row, header): # dict or list of dict
+    
+    if type(dictx) == dict:
+        for p_id, p_info in dictx.items():
+            if p_info == None: 
+                continue
+            if type(p_info) == str:
+                header.append(p_id)
+                row.append(p_info)
+            elif type(p_info) in (list, dict):
+                
+                dict_to_row(p_info, row, header)
+                #header = header + item_header
+                #row = row + item_row
+                
+    elif type(dictx) == list:  # dict in a dict
+        for list_item in dictx:
+            if list_item == None:
+                continue
+            dict_to_row(list_item, row, header)
+            #header = header + item_header
+            #row = row + item_row
+    return 
