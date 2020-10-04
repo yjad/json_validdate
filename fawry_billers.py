@@ -94,9 +94,7 @@ def fawry_billers_excel(file_name):
     billers = load_json_file(file_name)
     wb = Workbook()
     ws = wb.active
-    
-    
-    
+
     for biller_rec in billers['biller_records']:
         for biller_info in biller_rec['biller_information']:
             row = []
@@ -113,7 +111,11 @@ def fawry_billers_excel(file_name):
     wb.save(file_name +".xlsx")
         
     return
-    
+
+def not_used(file_name):
+    billers = load_json_file(file_name)
+    wb = Workbook()
+    ws = wb.active
     row, header = dict_to_row(billers['biller_records'][0])
     ws.append(header)
     ws.append(row)
@@ -179,9 +181,8 @@ def list_biller_records(biller_records):
                 sheet1.append(row)
 
     
-    
 def dict_to_row(dictx, row, header): # dict or list of dict
-    
+
     if type(dictx) == dict:
         for p_id, p_info in dictx.items():
             if p_info == None: 
@@ -190,16 +191,30 @@ def dict_to_row(dictx, row, header): # dict or list of dict
                 header.append(p_id)
                 row.append(p_info)
             elif type(p_info) in (list, dict):
-                
                 dict_to_row(p_info, row, header)
-                #header = header + item_header
-                #row = row + item_row
-                
+
     elif type(dictx) == list:  # dict in a dict
         for list_item in dictx:
             if list_item == None:
                 continue
             dict_to_row(list_item, row, header)
-            #header = header + item_header
-            #row = row + item_row
-    return 
+    return
+
+def get_biller_record(file_name, biller_name):
+    billers = load_json_file(file_name)
+    for biller_rec in billers['biller_records']:
+        if biller_rec.get('name') == biller_name:
+            for biller_info in biller_rec['biller_information']:
+                row = []
+                header = []
+                row.append(biller_rec['id'])
+                row.append(biller_rec['name'])
+                header.append('id')
+                header.append('name')
+                dict_to_row(biller_info, row, header)
+                #print (type(header), biller_rec['id'])
+                if header:
+                    print(header)
+                    print(row)
+            return
+    print (f"Biller rec {biller_name} not found")
