@@ -1,5 +1,6 @@
 import json
 from openpyxl import Workbook
+file_name = r'.\response.json'
 
 def print_keys(prefix_id, parent_dict_key, dictx):
 
@@ -70,7 +71,7 @@ def list_biller_info (dicx, key):
                 print(arr)
 
 
-def load_json_file(file_name):
+def load_json_file():
     with open(file_name, 'r', encoding ='UTF-8') as myfile:
         data=myfile.read()
     myfile.close
@@ -86,12 +87,12 @@ def format_dict_file(dictx):
 
 
 def print_fawry_billers():
-    billers = load_json_file(file_name = "response.json")
+    billers = load_json_file()
     print_keys(0, "billers", billers)
 
 
-def fawry_billers_excel(file_name):
-    billers = load_json_file(file_name)
+def fawry_billers_excel():
+    billers = load_json_file()
     wb = Workbook()
     ws = wb.active
 
@@ -112,8 +113,8 @@ def fawry_billers_excel(file_name):
         
     return
 
-def not_used(file_name):
-    billers = load_json_file(file_name)
+def not_used():
+    billers = load_json_file()
     wb = Workbook()
     ws = wb.active
     row, header = dict_to_row(billers['biller_records'][0])
@@ -200,8 +201,8 @@ def dict_to_row(dictx, row, header): # dict or list of dict
             dict_to_row(list_item, row, header)
     return
 
-def get_biller_record(file_name, biller_name):
-    billers = load_json_file(file_name)
+def get_biller_record(biller_name):
+    billers = load_json_file()
     for biller_rec in billers['biller_records']:
         if biller_rec.get('name') == biller_name:
             for biller_info in biller_rec['biller_information']:
